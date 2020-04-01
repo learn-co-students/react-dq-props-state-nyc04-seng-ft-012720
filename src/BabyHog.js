@@ -13,13 +13,6 @@ const eyesMapper = {
       'sun': SunBaby,
       'glowing': GlowingBaby
 }
-const weightMapper = {
-  50: '200px',
-  '210px': '220px',
-  '220px': '240px'
-}
-
-
 
 export default class BabyHog extends Component {
 
@@ -35,8 +28,6 @@ export default class BabyHog extends Component {
     })
   }
   
-  
-
   render() {
     const name = this.props.babyName
     const hobby = this.props.babyHobby

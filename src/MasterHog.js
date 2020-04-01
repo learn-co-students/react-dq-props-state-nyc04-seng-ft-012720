@@ -15,7 +15,7 @@ export default class MasterHog extends Component {
   generateHogs = () => {
     
     return offspring.map(hogObj =>
-      <BabyHog name={hogObj.name} hobby={hogObj.hobby} eyeColor={this.state.eyeColor}/>
+      <BabyHog key={hogObj.id} name={hogObj.name} hobby={hogObj.hobby} eyeColor={this.state.eyeColor}/>
       )
   }
 
